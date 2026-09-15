@@ -1,0 +1,9 @@
+# Vim
+.*.swp
+Session.vim
+Sessionx.vim
+*~
+
+# Rust
+target/
+ignore/

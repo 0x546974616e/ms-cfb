@@ -1,0 +1,10 @@
+tree   [-f] COMPOUND_FILE [[-d] DIRECTOTY_PATH]
+list   [-f] COMPOUND_FILE [[-d] DIRECTOTY_PATH]
+cat    [-f] COMPOUND_FILE [[-d] DIRECTOTY_PATH] [[-o] DESTINATION]
+unpack [-f] COMPOUND_FILE [[-d] DIRECTOTY_PATH] [-o] DESTINATION
+
+Options:
+  -o DESTINATION
+  -f COMPOUND_FILE
+  -d DIRECTOTY_PATH (default: ̀`/`)
+    Path inside the compound File.

@@ -1,0 +1,17 @@
+[package]
+name = "mscfb-pod"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "mscfb_pod"
+path = "sources/library.rs"
+
+[dependencies]
+mscfb-pod-derive = { path = "./derive" }
+
+# See feature options:
+# https://doc.rust-lang.org/cargo/reference/features.html
+# https://doc.rust-lang.org/nightly/cargo/reference/features.html
+[features]
+unaligned = []

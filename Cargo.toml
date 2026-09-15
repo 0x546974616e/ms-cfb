@@ -1,0 +1,8 @@
+[workspace]
+resolver = "3"
+members = [
+  "mscfb-cf",
+  "mscfb-cli",
+  "mscfb-pod",
+  "mscfb-utils",
+]

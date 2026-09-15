@@ -1,0 +1,12 @@
+[package]
+name = "mscfb-cli"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "mscfb"
+path = "sources/main.rs"
+
+[dependencies]
+mscfb-cf = { path = "../mscfb-cf" }
+mscfb-utils = { path = "../mscfb-utils" }
