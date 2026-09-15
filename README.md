@@ -1,7 +1,7 @@
 
 # Compound File
 
-Reader d'un [Compound File][CFBF] selon [MS-CBF][MS-CFB].
+[Compound File][CFBF] reader-only according to [MS-CFB][MS-CFB].
 
 [CFBF]: https://en.wikipedia.org/wiki/Compound_File_Binary_Format
 [MS-CFB]: https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-cfb/
@@ -56,9 +56,9 @@ A few notes on the result:
   directory (a *storage* in the Compound File), and a file (a *stream* in the
   Compound File).
 
-- The characters `䡀䑒䗶䏤㮯䈻䘦䈷䈜䘴䑨䈦` form a valid UTF-16 string and encode a
-  binary payload (otherwise, encoding the data as base64 in UTF-16 would double
-  its size).
+- These characters `䡀䑒䗶䏤㮯䈻䘦䈷䈜䘴䑨䈦` (founded in `.msi` files) form a
+  valid UTF-16 string and encode a binary payload (otherwise, encoding the data
+  as base64 in UTF-16 would double its size).
 
 - Files beginning with the byte `0x05` represent [property sets][MS-OLEPS].
 
@@ -142,10 +142,10 @@ rustup toolchain install nightly
 rustup component add rustfmt --toolchain nightly
 ```
 
-(Ou `rustup toolchain install nightly --component rustfmt`.)
+(Or `rustup toolchain install nightly --component rustfmt`.)
 
 ```sh
 cargo +nightly fmt
 ```
 
-The project uses `nightly` for code formatting."
+The project uses `nightly` for code formatting.
